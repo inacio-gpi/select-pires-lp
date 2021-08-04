@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favicon -->
-  <link href="img/favicon.ico" rel="shortcut icon" />
+  <link rel="shortcut icon" href="img/favicon.png" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -605,99 +605,7 @@
   <section class="representative-section">
     <div class="container">
       <div class="row">
-        <style>
-          /* mapa */
-          #svg-map path {
-            /* background */
-            fill: #333333;
-            /* borda */
-            stroke: #000;
 
-          }
-
-          #svg-map text {
-            fill: #fff;
-            /* font: 12px Arial-BoldMT, sans-serif; */
-            cursor: pointer
-          }
-
-          #svg-map a {
-            text-decoration: none
-          }
-
-          #svg-map a:hover {
-            cursor: pointer;
-            text-decoration: none
-          }
-
-          #svg-map a:hover path {
-            fill: #eb1b24 !important
-          }
-
-          #svg-map .circle {
-            fill: #444444
-          }
-
-          #svg-map a:hover .circle {
-            fill: #eb1b24 !important;
-            cursor: pointer
-          }
-
-          /* hover */
-          .tooltip-rec {
-            position: relative;
-            display: inline-block;
-          }
-
-          .tooltip-rec .tooltiptext-rec {
-            visibility: hidden;
-            width: 190px;
-            height: 50px;
-            transform: translate(-95px, -60px);
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            opacity: 0;
-            transition: opacity 0.3s;
-
-            padding: 10px 15px;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-            line-height: 18px;
-            color: #ffffff;
-            font-weight: 700;
-            font-family: "Inter";
-          }
-
-          .tooltip-rec .tooltiptext-rec svg {
-            height: 30px;
-            width: 30px;
-          }
-
-          .tooltip-rec .tooltiptext-rec::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: #555 transparent transparent transparent;
-          }
-
-          .tooltip-rec:hover .tooltiptext-rec {
-            visibility: visible;
-            opacity: 1;
-          }
-        </style>
         <div class="col-12">
           <h2>Encontre o seu Representante</h2>
           <select class="form-control border-0">
@@ -709,21 +617,10 @@
           </select>
           <!-- mapa -->
 
-          <!-- <p> -->
-          <!-- <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
-              aria-expanded="false" aria-controls="collapseExample">
-              Link with href
-            </a> -->
-          <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Button with data-target
-            </button>
-          </p> -->
-
           <div class="collapse tooltip-rec" id="collapseExample">
             <svg version="1.1" id="svg-map" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="450px" height="460px"
-              viewBox="0 0 450 460" enable-background="new 0 0 450 460" xml:space="preserve" class="mb-3">
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 450 460"
+              enable-background="new 0 0 450 460" xml:space="preserve" class="svg-mapa mb-3">
               <g>
                 <a xlink:href="#tocantins" class="toca" data-valor="0" data-nome="Tocantins">
                   <path stroke="#FFFFFF" stroke-width="1.0404" stroke-linecap="round" stroke-linejoin="round" d="M289.558,235.641
@@ -1295,6 +1192,22 @@
       <option value="1">English</option>
       <option value="2">Español</option>
     </select>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <p class="site-copyright text-center mb-0">
+          <small>Copyright ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <!-- <a href="https://www.instagram.com/guilherme_psiu/" target="_blank" rel="nofollow noopener">• -->
+            <a href="https://www.psiu.dev" target="_blank" rel="nofollow noopener">
+              • PSIU
+              <img src="img/favicon.png" height="18px" alt="Image">
+            </a>
+          </small>
+        </p>
+      </div>
+    </div>
   </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
