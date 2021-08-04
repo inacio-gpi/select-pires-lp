@@ -106,6 +106,38 @@ $(window).on('load', function () {
     },
   });
 
+  $('.news-slider').owlCarousel({
+    items: 1,
+    // autoplay: true,
+    // autoplayTimeout: 5000,
+    smartSpeed: 400,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    autoplayHoverPause: true,
+    loop: true,
+    // nav: true,
+    merge: true,
+    dots: true,
+    // navText: [
+    //   '<img src="img/seta-left.png" alt="#">',
+    //   '<img src="img/seta-right.png" alt="#">',
+    // ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      992: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+      2000: {
+        items: 3,
+      },
+    },
+  });
+
   $('.selos-slider').owlCarousel({
     items: 1,
     // autoplay: true,
