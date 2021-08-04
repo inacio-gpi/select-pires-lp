@@ -172,6 +172,7 @@ $(window).on('load', function () {
       },
     },
   });
+
   $('.depoiments-slider').owlCarousel({
     items: 1,
     // autoplay: true,
@@ -200,6 +201,7 @@ $(window).on('load', function () {
       },
     },
   });
+
   $('.publish-slider').owlCarousel({
     items: 1,
     // autoplay: true,
@@ -367,4 +369,16 @@ $(window).on('load', function () {
     });
   };
   mobileLinks();
+
+  $('#svg-map a path').mouseenter(function () {
+    // var teste = $(this);
+    // var teste = $(this)[0].getBoundingClientRect();
+    var teste = $(this)[0].getBBox();
+    var tooltip_left = (teste.x + teste.x + teste.width) / 2;
+    var tooltip_bottom = (teste.y + teste.y + teste.height) / 2;
+    $('.tooltip-rec .tooltiptext-rec').css('left', tooltip_left);
+    $('.tooltip-rec .tooltiptext-rec').css('right', tooltip_left);
+    $('.tooltip-rec .tooltiptext-rec').css('bottom', tooltip_bottom);
+    $('.tooltip-rec .tooltiptext-rec').css('top', tooltip_bottom);
+  });
 })(jQuery);

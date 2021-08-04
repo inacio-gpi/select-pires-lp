@@ -2487,6 +2487,9 @@ overflow: hidden;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.representative-section select {
+		width: auto;
+	}
 }
 
 /* Medium Mobile :480px. */
@@ -2505,6 +2508,9 @@ overflow: hidden;
 	.hero-slider .owl-nav {
 		padding: 0 15px;
 	}
+}
+
+@media only screen and (max-width: 400px) {
 	.news-item {
 		width: 100%;
 	}
