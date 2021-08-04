@@ -1075,6 +1075,17 @@ ul, ol {
 	gap: 30px;
 }
 
+.home-section .col-home.home-2 {
+	gap: 20px;
+}
+
+.home-section .col-home.home-2 .img-video {
+	position: unset;
+	transform: none;
+	width: 70px;
+	height: 70px;
+}
+
 .home-section .btn-home {
 	font-size: 16px;
 	color: #ffffff;
@@ -2334,6 +2345,9 @@ overflow: hidden;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.home-section .col-home.home-2 {
+		gap: 60px;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2496,7 +2510,6 @@ overflow: hidden;
 	}
 }
 
-
 @media (min-width: 576px) {
 	.site-nav .container {
 		max-width: 100vw;
@@ -2521,3 +2534,7 @@ overflow: hidden;
 		right: 10px;
 	}
 }
+
+/* select option {
+	padding: 5px 0 !important;
+} */
